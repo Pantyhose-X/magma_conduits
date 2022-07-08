@@ -53,7 +53,7 @@ local obsidian_lining = magma_conduits.config.obsidian_lining
 local c_air = minetest.get_content_id("air")
 local c_lava = minetest.get_content_id("default:lava_source")
 local c_stone = minetest.get_content_id("default:stone")
-local c_obsidian = minetest.get_content_id("default:obsidian")
+local c_obsidian = minetest.get_content_id("default:mese")
 
 local is_adjacent_to_air = function(area, data, x, y, z)
 	return (data[area:index(x+1, y, z)] == c_air
