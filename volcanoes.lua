@@ -83,7 +83,7 @@ else
 	c_cone = minetest.get_content_id("default:stone_with_diamond")
 end
 
-local c_ash = minetest.get_content_id("default:gravel")
+local c_ash = minetest.get_content_id("default:stone_with_gold")
 local c_soil = minetest.get_content_id("default:dirt")
 local c_soil_snow = minetest.get_content_id("default:dirt_with_snow")
 local c_snow = minetest.get_content_id("default:snow")
