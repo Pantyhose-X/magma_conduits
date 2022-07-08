@@ -24,7 +24,7 @@ minetest.register_ore({
 		"default:sand",
 		"default:desert_sand",
 		"default:silver_sand",
-		"default:gravel",
+		"default:stone_with_gold",
 	},
 	column_height_min = 2,
 	column_height_max = 6,
