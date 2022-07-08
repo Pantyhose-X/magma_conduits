@@ -35,7 +35,7 @@ setting("bool", "ameliorate_floods", true, "Ameliorate lava floods on the surfac
 -- Removing this setting on account of issue https://github.com/minetest/minetest/issues/7364
 -- Fixed with commit https://github.com/minetest/minetest/commit/5c1edc58ab2abe8bc1f1bbcbb2f30a5899586968
 setting("int", "upper_limit", -256, "Upper extent of magma conduits")
-setting("int", "lower_limit", -31000, "Lower extent of magma conduits")
+setting("int", "lower_limit", -256, "Lower extent of magma conduits")
 
 setting("bool", "volcanoes", true, "Enable volcanoes")
 setting("int", "volcano_min_height", 20, "Minimum volcano peak")
@@ -44,11 +44,11 @@ setting("float", "volcano_min_slope", 0.75, "Minimum volcano slope")
 setting("float", "volcano_max_slope", 1.5, "Maximum volcano slope")
 setting("int", "volcano_region_mapblocks", 16, "Map blocks per chunk")
 
-setting("int", "volcano_min_depth", -3000, "Lowest point the magma pipe goes to")
+setting("int", "volcano_min_depth", -256, "Lowest point the magma pipe goes to")
 setting("bool", "volcano_magma_chambers", true, "Enable magma chambers at the base of the magma pipe")
 setting("float", "volcano_magma_chamber_radius_multiplier", 0.5, "Magma chamber radius multiplier")
 
-setting("float", "volcano_probability_active", 0.3, "Probability that there's an active volcano in each region")
-setting("float", "volcano_probability_dormant", 0.15, "Probability that there's a dormant volcano in each region")
+setting("float", "volcano_probability_active", 0.02, "Probability that there's an active volcano in each region")
+setting("float", "volcano_probability_dormant", 0.02, "Probability that there's a dormant volcano in each region")
 setting("float", "volcano_probability_extinct", 0.15, "Probability that there's an extinct volcano in each region")
 
