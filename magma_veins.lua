@@ -6,7 +6,7 @@ minetest.register_ore({
 	ore_type = "vein",
 	ore = "default:lava_source",
 	wherein = {
-		"default:stone",
+		"default:stone_with_diamond",
 		"default:desert_stone",
 		"default:sandstone",
 		"default:stone_with_coal",
@@ -52,7 +52,7 @@ local obsidian_lining = magma_conduits.config.obsidian_lining
 
 local c_air = minetest.get_content_id("air")
 local c_lava = minetest.get_content_id("default:lava_source")
-local c_stone = minetest.get_content_id("default:stone")
+local c_stone = minetest.get_content_id("default:stone_with_diamond")
 local c_obsidian = minetest.get_content_id("default:mese")
 
 local is_adjacent_to_air = function(area, data, x, y, z)
