@@ -73,8 +73,8 @@ local c_air = minetest.get_content_id("air")
 local c_lava = minetest.get_content_id("magma_conduits:lava_source") -- https://github.com/minetest/minetest/issues/7864
 local c_water = minetest.get_content_id("default:water_source")
 
-local c_lining = minetest.get_content_id("default:obsidian")
-local c_hot_lining = minetest.get_content_id("default:obsidian")
+local c_lining = minetest.get_content_id("default:mese")
+local c_hot_lining = minetest.get_content_id("default:mese")
 
 local c_cone
 if minetest.get_mapgen_setting("mg_name") == "v7" then
@@ -91,7 +91,7 @@ local c_snow_block = minetest.get_content_id("default:snowblock")
 
 local c_sand = minetest.get_content_id("default:sand")
 local c_underwater_soil = c_sand
-local c_plug = minetest.get_content_id("default:obsidian")
+local c_plug = minetest.get_content_id("default:mese")
 
 if magma_conduits.config.glowing_rock then
 	c_hot_lining = minetest.get_content_id("magma_conduits:glow_obsidian")
