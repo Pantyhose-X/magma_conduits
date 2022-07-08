@@ -79,7 +79,7 @@ end
 
 make_heatable("default:mese", "magma_conduits:glow_obsidian")
 
-make_heatable("default:stone", "magma_conduits:hot_cobble")
+make_heatable("default:stone_with_diamond", "magma_conduits:hot_cobble")
 make_heatable("default:cobble", "magma_conduits:hot_cobble")
 make_heatable("default:mossycobble", "magma_conduits:hot_cobble")
 make_heatable("default:stone_with_coal", "magma_conduits:hot_cobble")
