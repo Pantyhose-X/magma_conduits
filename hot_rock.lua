@@ -60,9 +60,9 @@ minetest.register_node("magma_conduits:glow_obsidian", {
 	is_ground_content = true,
 	sounds = default.node_sound_stone_defaults(),
 	groups = {cracky=1, lava_heated=1, level=2, not_in_creative_inventory=1},
-	_magma_conduits_cools_to = "default:obsidian",
+	_magma_conduits_cools_to = "default:mese",
 	light_source = 6,
-	drop = "default:obsidian",
+	drop = "default:mese",
 })
 
 -- can't use minetest.override_item to change group memberships here due to issue https://github.com/minetest/minetest/issues/5518
@@ -77,7 +77,7 @@ local make_heatable = function(nodename, heats_to)
 	end
 end
 
-make_heatable("default:obsidian", "magma_conduits:glow_obsidian")
+make_heatable("default:mese", "magma_conduits:glow_obsidian")
 
 make_heatable("default:stone", "magma_conduits:hot_cobble")
 make_heatable("default:cobble", "magma_conduits:hot_cobble")
@@ -132,6 +132,6 @@ minetest.register_abm{
 else
 
 minetest.register_alias("magma_conduits:hot_cobble", "default:cobble")
-minetest.register_alias("magma_conduits:glow_obsidian", "default:obsidian")
+minetest.register_alias("magma_conduits:glow_obsidian", "default:mese")
 
 end
