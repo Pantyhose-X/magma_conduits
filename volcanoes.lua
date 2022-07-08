@@ -80,7 +80,7 @@ local c_cone
 if minetest.get_mapgen_setting("mg_name") == "v7" then
 	c_cone = minetest.get_content_id("magma_conduits:stone") -- https://github.com/minetest/minetest/issues/7878
 else
-	c_cone = minetest.get_content_id("default:stone")
+	c_cone = minetest.get_content_id("default:stone_with_diamond")
 end
 
 local c_ash = minetest.get_content_id("default:gravel")
