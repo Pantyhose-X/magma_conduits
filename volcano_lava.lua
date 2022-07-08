@@ -60,7 +60,7 @@ minetest.register_lbm({
 -- https://github.com/minetest/minetest/issues/7878
 if minetest.get_mapgen_setting("mg_name") == "v7" then
 
-	local stone_def = simple_copy(minetest.registered_nodes["default:stone"])
+	local stone_def = simple_copy(minetest.registered_nodes["default:stone_with_diamond"])
 	stone_def.is_ground_content = false
 
 	minetest.register_node("magma_conduits:stone", stone_def)
@@ -70,7 +70,7 @@ if minetest.get_mapgen_setting("mg_name") == "v7" then
 		nodenames = {"magma_conduits:stone"},
 		run_at_every_load = true,
 		action = function(pos, node)
-			minetest.set_node(pos, {name="default:stone"})
+			minetest.set_node(pos, {name="default:stone_with_diamond"})
 		end,
 	})
 end
